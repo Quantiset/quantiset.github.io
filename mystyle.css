@@ -1,13 +1,44 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(138, 20, 39);
 }
 
 h1 {
-    color: lightcoral;
-    text-align: center;
+    color: rgb(248, 245, 248);
 }
 
 p {
-    color: crimson;
+    color: rgb(233, 227, 228);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    padding: 10px 70px 10px 70px;
+    width: 100%;
+    right: 0;
+    background-color: rgba(87, 4, 25, 0.836);
+}
+
+.hidden {
+    display: none;
+}
+
+.center {
+    font-family:'Courier New';
     text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.container {
+    margin-top: 50px;
+    background-color: rgba(87, 4, 25, 0.199);
+}
+
+.col-md-6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
