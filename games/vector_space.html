@@ -4,14 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Quantiset Main Page</title>
+    <title>Rogue Wing</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="../mystyle.css">
 
   </head>
   <body>
+
     <nav class="navbar navbar-expand-md navbar-dark">
         <a href="#" class="navbar-brand">
             <img src="assets/quantiset.png" alt="Quantiset"
@@ -43,41 +44,20 @@
         </div>
     </nav>
 
-    <div id="panels" class="container">
-        <div class="row align-items-md-stretch">
-            <div class="col-md-5">
-            <div class="h-100 p-5 text-white rounded-3">
-                <h2>Games</h2>
-                <p>The following games are hosted through <a href="https://www.itch.io">itch.io</a> and are some random projects I've made using <a href="https://www.godotengine.org">Godot</a>!</p>
-                <p>These games have hit the dustbin and probably not getting an update.</p>
-            </div>
-            </div>
-            <div class="col-md-7">
-            <div class="h-100 p-5 text-white rounded-3">
-                <button class="btn btn-outline-secondary" type="button" onclick="clicked('rogue_wing')">Rogue Wing</button>
-                <button class="btn btn-outline-secondary" type="button" onclick="clicked('wuck')">Wuck</button>
-                <button class="btn btn-outline-secondary" type="button" onclick="clicked('vector_space')">Vector Space</button>
-            </div>
-            </div>
-        </div>
+    <div id="game" class="container">
+        <span class="center">
+            <h1><b>Vector Space</b></h1>
+            <iframe frameborder="1" src="https://itch.io/embed-upload/6524221?color=262628" allowfullscreen="true" height="720"><a href="https://quantiset.itch.io/vector-space">Play Vector Space on itch.io</a></iframe>
+            <br>
+            <p>I made this for the 3b1b Summer of Math 2022! It didn't get top 10 but it was fun to make regardless!</p>
+        </span>
     </div>
 
-    <script>
-    function clicked(game) {
-        if (game == "rogue_wing") {
-            document.location.href = "https://quantiset.github.io/games/rogue_wing";
-        } else if (game == "wuck") {
-            document.location.href = "https://quantiset.github.io/games/wuck_web";
-        } else if (game == "vector_space") {
-            document.location.href = "https://quantiset.github.io/games/vector_space";
-        }
-    }
-    </script>
 
     <br><br>
 
     <p style="text-align: center;color: rgba(255, 255, 255, 0.534)">Website hosted with 
-        <a style="text-align: center;color: rgba(250, 128, 128, 0.534)" href="https://github.com/Quantiset/quantiset.github.io">Github Pages</a></p>
+        <a style="text-align: center;color: rgba(138, 106, 131, 0.534)" href="https://github.com/Quantiset/quantiset.github.io">Github Pages</a></p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
