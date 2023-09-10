@@ -10,6 +10,18 @@ p {
     color: rgb(233, 227, 228);
 }
 
+a:link {
+    color: lightcoral;
+}
+
+a:visited {
+    color: coral;
+}
+
+#mygame {
+    width: 100%;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -19,6 +31,16 @@ nav {
     width: 100%;
     right: 0;
     background-color: rgba(87, 4, 25, 0.836);
+}
+
+.btn {
+    color: white;
+    border-color: lightpink;
+}
+
+.btn:hover {
+    color: black;
+    background-color: cyan;
 }
 
 .hidden {
