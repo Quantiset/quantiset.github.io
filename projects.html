@@ -45,18 +45,40 @@
 
     <div id="panels" class="container">
         <div class="row align-items-md-stretch">
-            <div class="col-md-5">
+            <div class="col-md-4">
             <div class="h-100 p-5 text-white rounded-3">
                 <h2>CScope</h2>
+                <br>
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('gradescope-sc')">Source Code</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('gradescope-dw')">Download</button>
+            </div>
+            </div>
+            <div class="col-md-8">
+            <div class="h-100 p-5 text-white rounded-3">
                 <p>This was made during the CU Hackathon Event for freshman Undergraduates</p>
                 <p>Made as a response to the horrible overhead of transferring from the School of Computing servers to Gradescope</p>
                 <p>Contains both a CLI and a GUI to submit files from the SoC servers directly to Gradescope without any interference</p>
             </div>
             </div>
-            <div class="col-md-7">
+        </div>
+    </div>
+
+    <br>
+
+    <div id="panels" class="container">
+        <div class="row align-items-md-stretch">
+            <div class="col-md-4">
             <div class="h-100 p-5 text-white rounded-3">
+                <h2>OwOifier</h2>
+                <br>
                 <button class="btn btn-outline-secondary" type="button" onclick="clicked('gradescope-sc')">Source Code</button>
-                <button class="btn btn-outline-secondary" type="button" onclick="clicked('gradescope-dw')">Download</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('gradescope-dw')">Invite!</button>
+            </div>
+            </div>
+            <div class="col-md-8">
+            <div class="h-100 p-5 text-white rounded-3">
+                <p>A discord bot that I made for a in-joke</p>
+                <p>Deletes messages sent and resends them as "furryspeak"</p>
             </div>
             </div>
         </div>
@@ -67,7 +89,11 @@
         if (game == "gradescope-sc") {
             document.location.href = "https://github.com/GCPins/cscope";
         } else if (game == "gradescope-dw") {
-            document.location.href = "https://quantiset.itch.io/cscope";
+            document.location.href = "https://github.com/GCPins/cscope/releases/tag/gui-win";
+        } else if (game == "owo-sc") {
+            document.location.href = "https://github.com/Quantiset/OwOifier";
+        } else if (game == "owo-dw") {
+            document.location.href = "https://discord.com/api/oauth2/authorize?client_id=701192860355002478&permissions=10277655488720&scope=bot%20applications.commands";
         } 
     }
     </script>

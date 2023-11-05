@@ -69,3 +69,7 @@ textarea#exampleTextArea {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.dr_bg {
+    background: transparent url("assets/skybg.png");
+}
