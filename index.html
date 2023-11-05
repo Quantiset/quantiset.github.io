@@ -73,15 +73,19 @@
                 <p>I'm also open to commissions and projects. Please contact me about offers.</p>
             </div></div>
             <div class="col-md-7"><div class="h-100 p-5 text-white rounded-3">
-                <button style="width:100%" class="btn btn-outline-secondary" type="button" onclick="clicked('rogue_wing')">Contact Me on Discord!</button>
+                <button style="width:100%" class="btn btn-outline-secondary" type="button" onclick="clicked('discord')">Contact Me on Discord!</button>
+                <div class="mt-3 col-md-12"></div>            
+                <button style="width:100%" class="btn btn-outline-secondary" type="button" onclick="clicked('mail')">Email me!</button>
             </div></div>
         </div>
     </div>
 
     <script>
         function clicked(buttonName) {
-            if (buttonName=="rogue_wing") {
+            if (buttonName=="discord") {
                 document.location.href = "https://discordapp.com/users/277250557696147457";
+            } else if (buttonName=="mail") {
+                window.location.href = "mailto:ryon.peddapalli@gmail.com";
             }
         }
     </script>

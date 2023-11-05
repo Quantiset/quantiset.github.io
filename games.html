@@ -48,13 +48,13 @@
         <div class="row align-items-md-stretch dr_bg">
             <div class="col-md-5">
             <div class="h-100 p-5 text-white rounded-3">
-                <h2>Dungeon Rogues</h2>
-                <p>A game we have been working on for a little while! It is currently still in development and in standstill</p>
+                <h2>Rogue Wing</h2>
+                <p>A demo of a spaceship game that was modeled after SNKRX</p>
             </div>
             </div>
             <div class="col-md-7">
             <div class="h-100 p-5 text-white rounded-3">
-                <button class="btn btn-outline-secondary" type="button" onclick="clicked('dr_page')">View Page!</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('rogue_wing')">Play Demo!</button>
             </div>
             </div>
         </div>
@@ -98,8 +98,12 @@
 
     <script>
     function clicked(game) {
+        if (game == "dr_page") {
+            document.location.href = "https://quantiset.github.io/games/dungeon_rogues";
+        
+
             // games
-        if (game == "rogue_wing") {
+        } else if (game == "rogue_wing") {
             document.location.href = "https://quantiset.github.io/games/rogue_wing";
         } else if (game == "wuck") {
             document.location.href = "https://quantiset.github.io/games/wuck_web";
