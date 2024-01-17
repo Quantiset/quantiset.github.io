@@ -11,10 +11,14 @@ p {
 }
 
 a:link {
-    color: lightcoral;
+    color: rgba(240, 128, 128, 0.534);
 }
 
 a:visited {
+    color: coral;
+}
+
+a:active {
     color: coral;
 }
 
