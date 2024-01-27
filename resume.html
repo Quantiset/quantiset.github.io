@@ -57,6 +57,12 @@
 
     <div id="panels" class="container">
         <div class="row align-items-md-stretch">
+            <button style="height:75px" class="btn btn-outline-secondary" type="button" onclick="clicked('pdf')">View as PDF</button>
+        </div>
+    </div>
+
+    <div id="panels" class="container">
+        <div class="row align-items-md-stretch">
             <div class="col-md-9"><div class="h-100 p-5 text-white rounded-3">
                 <h2>Education</h2>
                 <br>
@@ -130,6 +136,8 @@
                 document.location.href = "https://discordapp.com/users/277250557696147457";
             } else if (buttonName=="mail") {
                 window.location.href = "mailto:ryon.peddapalli@gmail.com";
+            } else if (buttonName=="pdf") {
+                window.location.href = "assets/DocumentPublic.pdf";
             }
         }
     </script>
