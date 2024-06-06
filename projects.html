@@ -51,6 +51,28 @@
         <div class="row align-items-md-stretch">
             <div class="col-md-4">
             <div class="h-100 p-5 text-white rounded-3">
+                <h2>Collaboration Station</h2>
+                <br>
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('collab-dw')">Source Code</button>
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('collab-dw')">Visit!</button>
+            </div>
+            </div>
+            <div class="col-md-8">
+            <div class="h-100 p-5 text-white rounded-3">
+                <p>This was made for an NSF project to help autistic high schoolers learn to code!</p>
+                <p>Fork of Scratch that allows real-time collaboration</p>
+                <p>Used to conduct real-time camps</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div id="panels2" class="container">
+        <div class="row align-items-md-stretch">
+            <div class="col-md-4">
+            <div class="h-100 p-5 text-white rounded-3">
                 <h2>CScope</h2>
                 <br>
                 <button class="btn btn-outline-secondary" type="button" onclick="clicked('gradescope-sc')">Source Code</button>
@@ -69,7 +91,7 @@
 
     <br>
 
-    <div id="panels2" class="container">
+    <div id="panels3" class="container">
         <div class="row align-items-md-stretch">
             <div class="col-md-4">
             <div class="h-100 p-5 text-white rounded-3">
@@ -99,6 +121,8 @@
             document.location.href = "https://github.com/Quantiset/OwOifier";
         } else if (game == "owo-dw") {
             document.location.href = "https://discord.com/api/oauth2/authorize?client_id=701192860355002478&permissions=10277655488720&scope=bot%20applications.commands";
+        } else if (game == "collab-dw") {
+            document.location.href = "https://quantiset.github.io/CollabStation/homepage.html";
         } 
     }
     </script>
