@@ -1,26 +1,43 @@
-.container {
+#full_container {
   margin-top: 74px;
-  height: clac(100vh - 74px);
+  height: calc(100vh - 74px);
   width: 100%;
-  position: relative;
+  flex: 1;
+  display: flex;
 }
 
 #room__container {
-  position: relative;
   display: flex;
-  gap: 3rem;
+    flex: 1;
+    width: 100%;
+    height: 100%;
 }
+
+#stream__container {
+  display: flex;
+    flex-direction: vertical;
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+#main-stream {
+  height: 100%;
+  width: 100%;
+  
+}
+
 
 #members__container {
   background-color: #262625;
   border-right: 1px solid #797a79;
   overflow-y: auto;
-  width: 90%;
-  max-width: 250px;
-  position: fixed;
+  width: 0%;
+  max-width: 0px;
+  position: flex;
   height: 100%;
   z-index: 999;
 }
+  
 
 #members__count {
   background-color: #1d1d1c;
@@ -79,7 +96,7 @@
   right: 0;
   position: absolute;
   width: 100%;
-  max-width: 25rem;
+  max-width: 300px;
   overflow-y: auto;
   border-left: 1px solid #111;
 }
@@ -164,18 +181,6 @@
   color: #707575;
 }
 
-#stream__container {
-  justify-self: center;
-  width: calc(100% - 40.7rem);
-  position: fixed;
-  left: 15.7rem;
-  top: clac(100vh - 72px);
-  overflow-y: auto;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 #stream__box{
   background-color: #3f434a;
@@ -183,10 +188,6 @@
   display: none;
 }
 
-#main-stream {
-  height: 100%;
-  width: 100%;
-}
 
 #stream__box .video__container{
   border: 2px solid #000;

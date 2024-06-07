@@ -80,16 +80,31 @@ let sendMessage = async (e) => {
     e.target.reset()
 
     try {
+        const queryString = window.location.search
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString)
+        console.log(urlParams);
+        let projectId = urlParams.get('projectName')
+        const date = new Date();
+        let readableDate = date.toLocaleString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+        });
         let response = await fetch('https://lo4iehk4j4.execute-api.us-east-2.amazonaws.com/messages/addMessage', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                project_id: "project1",
+                id: Date.now().toString(),
+                project_id: projectId,
                 Username: displayName,
                 Message: message,
-                Timestamp: Date.now()
+                Time: readableDate
             })
         });
 

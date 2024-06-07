@@ -18,8 +18,8 @@
             </button>
             <a href="projects.html"/>
                 <h3 id="logo">
-                    <img src="./images/logo.png" alt="Site Logo">
-                    <span>EdEASE</span>
+                    <!--<img src="./images/logo.png" alt="Site Logo">-->
+                    <span>Collaboration Station</span>
                 </h3>
             </a>
        </div>
@@ -39,9 +39,10 @@
         </div>
     </header>
 
-    <main class="container">
+    <div id="full_container">
         <div id="room__container">
 
+            <!--
             <section id="members__container">
 
             <div id="members__header">
@@ -51,12 +52,13 @@
 
             <div id="member__list">
             </div>
-
             </section>
+        -->
 
-            <section id="stream__container">
 
-                <div id="stream__box"></div>
+            <div id="stream__container">
+
+                <!--<div id="stream__box"></div>-->
                 
                 
                 <iframe id="main-stream" src="https://quantiset.github.io/CollabStationVM/index.html?space=bark-noun-talk" title="Stream"></iframe>
@@ -77,7 +79,7 @@
                 </div>
 
                 <button id="join-btn">Join Stream</button>
-            </section>
+            </div>
 
             <section id="messages__container">
                 <button id="closeChatBtn" class="close-chat-btn">&times;</button>
@@ -90,7 +92,7 @@
 
             </section>
         </div>
-    </main>
+    </div>
     
 </body>
 <script type="text/javascript" src="js/AgoraRTC_N-4.11.0.js"></script>

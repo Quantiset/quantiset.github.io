@@ -60,7 +60,7 @@ function displayTiles() {
 function openProject(projectName) {
     // alert('Opening ' + projectName);
     // window.location=`room.html?projectName=${projectName}`;
-    window.location=`room.html?projectName=${projectName}`;
+    window.location.href=`room.html?projectName=${projectName}`;
     // Here you can add the code to redirect to a different page or load project details
     // For example: window.location.href = 'project1.html';
 }
