@@ -46,7 +46,26 @@
         </div>
     </nav>
 
-    <div id="panels" class="container">
+    <div id="lancet_panel" class="container">
+
+        <div class="row align-items-md-stretch dr_bg">
+            <div class="col-md-5">
+            </div>
+            <div class="col-md-5">
+            <div class="h-100 p-5 text-white rounded-3">
+                <h2>Lancet</h2>
+                <p>Game made for my HON 2210 Video Game Literature Class</p>
+            </div>
+            </div>
+            <div class="col-md-2">
+            <div class="h-100 p-5 text-white rounded-3">
+                <button class="btn btn-outline-secondary" type="button" onclick="clicked('lancet')">Play!</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rogue_wing_panel" class="container">
 
         <div class="row align-items-md-stretch dr_bg">
             <div class="col-md-5">
@@ -67,8 +86,8 @@
         <div class="row align-items-md-stretch">
             <div class="col-md-5">
             <div class="h-100 p-5 text-white rounded-3">
-                <h2>Games</h2>
-                <p>Here are a few of my games that I hosted through <a href="https://www.itch.io">itch.io</a> and are some random projects I've made using <a href="https://www.godotengine.org">Godot</a>!</p>
+                <h2>Dustbin</h2>
+                <p>Here are a few of my projects that I hosted through <a href="https://www.itch.io">itch.io</a> and are some random projects I've made using <a href="https://www.godotengine.org">Godot</a>!</p>
                 <p>These games have hit the dustbin and probably not getting an update.</p>
             </div>
             </div>
@@ -109,9 +128,11 @@
             document.location.href = "https://quantiset.github.io/games/dungeon_rogues";
         
 
-            // games
+        // games
         } else if (game == "rogue_wing") {
             document.location.href = "https://quantiset.github.io/games/rogue_wing";
+        } else if (game == "lancet") {
+            document.location.href = "https://quantiset.github.io/games/lancet";
         } else if (game == "watt_pack") {
             document.location.href = "https://quantiset.github.io/";
         } else if (game == "wuck") {
@@ -123,7 +144,7 @@
         } else if (game == "crawler") {
             document.location.href = "https://quantiset.github.io/games/dungeon_crawler";
         
-            // simulations
+        // simulations
         } else if (game == "lang") {
             document.location.href = "https://quantiset.github.io/games/programming_lang";
         }

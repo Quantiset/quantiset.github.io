@@ -74,6 +74,22 @@ textarea#exampleTextArea {
     margin-bottom: 10px;
 }
 
-.dr_bg {
+.overlay-box {
+    background: rgba(0, 0, 0.2, 0.7);
+}
+
+#rogue_wing_panel {
     background: transparent url("assets/roguewing.png");
+}
+
+#lancet_panel {
+    background: transparent url("assets/lancet.png");
+}
+
+#bayestar_panel {
+    background: transparent url("assets/bayestar.png");
+}
+
+#diffusion_panel {
+    background: transparent url("assets/diffusion.png");
 }
